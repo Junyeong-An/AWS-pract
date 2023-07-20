@@ -3,7 +3,7 @@ Description=uWSGI service
 After=syslog.target
 
 [Service]
-ExecStart=/home/ubuntu/venv/bin/uwsgu -i /srv/AWS-pract/.config/uwsgi/ajyProject.ini
+ExecStart=/home/ubuntu/venv/bin/uwsgi -i /srv/AWS-pract/.config/uwsgi/ajyProject.ini
 
 Restart=always
 KillSignal=SIGQUIT
