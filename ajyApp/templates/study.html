@@ -1,0 +1,36 @@
+{% extends 'main.html' %}
+{% load static %}
+
+<head>
+    {% block title %}<title>Study</title> {% endblock %}
+    <style>
+        @font-face {
+            font-family: "TheJamsil5Bold";
+            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2") format("woff2");
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #f5f8fa;
+            color: #313131;
+            font-family: "TheJamsil5Bold";
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+{% block subtitle %}
+<h1>Study Page</h1>
+{% endblock %}
+{% block content %}
+<h2>1학기 멋사 활동 회고</h2>
+<img src="{% static 'img/cute.webp' %}" width="400px" alt="cute">
+<br>
+<p>프론트 엔드 기술인 html, css, javascript 백엔드 기술인 파이썬을 이용한 django를 배웠고
+    <br><br>아이디어톤 행사를 통해 팀원들과 함께 협력하여 만들고 싶은 서비스를 기획하는 활동을 경험했다.
+    <br><br> 그 외에 세미나 등을 통해 앞으로 개발자가 되기 위해 필요한 것들을 습득할 수 있었다.
+</p>
+{% endblock %}

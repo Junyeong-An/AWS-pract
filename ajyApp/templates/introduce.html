@@ -1,0 +1,65 @@
+{% extends 'main.html' %}
+{% load static %}
+
+<head>
+    {% block title %}<title>Introduce</title> {% endblock %}
+    <style>
+        @font-face {
+            font-family: "TheJamsil5Bold";
+            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2") format("woff2");
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #f5f8fa;
+            color: #313131;
+            font-family: "TheJamsil5Bold";
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+{% block subtitle %}
+<h1>Introduce Page</h1>
+{% endblock %}
+{% block content %}
+<h2>나의 소개</h2>
+<article>
+    <ol>
+        <li>
+            <h2>소개</h2>
+            <ul>
+                <li><img src="{% static 'img/mymemoji.png' %}" width="200" height="200" alt="myImage"> <br>
+                    <h3>안준영</h3><br>
+                </li>
+                <br>
+                <li>
+                    <h3>Birth 2001.03.21 <br><br> 22세</h3>
+                </li>
+                <br>
+                <li><a href="https://www.skhu.ac.kr/skhu/index.do" target="_blank">성공회대학교</a> / <a
+                        href="https://www.skhu.ac.kr/sites/doit/index.do" target="_blank">IT융합자율학부</a></li>
+                <p>202014087</p>
+                <br>
+                <li>
+                    <h3>MBTI</h3>
+                    <h3>ISFP</h3>
+                </li>
+                <br>
+
+
+            </ul>
+        </li>
+        <br>
+        <li>
+            <h2>아이디어톤 서비스 소개</h2> <br>
+            <img src="{% static 'img/학쉼.png' %}" width="400px" alt="학쉼">
+            <p style="font-size: 20px;">학쉼은 학교폭력 피해자들을 위한 커뮤니티 서비스이다. </p>
+
+        </li>
+    </ol>
+</article>
+{% endblock %}

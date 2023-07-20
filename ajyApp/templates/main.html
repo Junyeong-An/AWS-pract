@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: "TheJamsil5Bold";
+            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2") format("woff2");
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #f5f8fa;
+            color: #313131;
+            font-family: "TheJamsil5Bold";
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+    {% block title %}
+    <title>Main</title>
+    {% endblock %}
+</head>
+
+<body>
+    {% block subtitle %}
+    <h1>Main Page</h1>
+    {% endblock %}
+    <nav>
+        <a href="{% url 'main' %}">Main</a></li>
+        <a href="{% url 'introduce' %}">Introduce</a>
+        <a href="{% url 'study' %}">Study</a>
+    </nav>
+    <hr>
+    <br>
+    {% block content %}
+    <img src="{% static 'img/aws.png' %}" width="400px" alt="aws">
+    <p style="font-size: 30px;">AWS EC2 배포</p>
+    {% endblock %}
+
+
+</body>
+
+</html>
